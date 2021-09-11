@@ -3,6 +3,11 @@
     text-decoration: none;
     list-style: none;
 }
+html,body {
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+}
 /* Text */
 h1 {
     font-family: 'Crimson Pro', serif;
@@ -71,13 +76,17 @@ html {
     width: 40vw;
     padding: 5vw 0% 0% 10vw;
     z-index: 900;
-}   
+}  
+.herotext h1 {
+    padding-top: 8vw;
+} 
 .heroimg img {
     width: 60vw;
     padding: 10vw 10vw 0% 0%;
 }
 .moto {
     color: #ffd600;
+    margin-top: -6vw;
 }
 #her {
     border: 1px solid #ffd600;
@@ -137,15 +146,16 @@ html {
     padding-left: 11vw;
 }
 .overtitle {
-    width: 20vw;
+    width: 15vw;
 }
 .overviewIllo img {
-    width: 20vw;
+    width: 15vw;
     padding-top: 5vw;
 }
 .overpart2 {
-    width: 30vw;
-    padding-left: -10vw;
+    width: 25vw;
+    padding-left: -20vw;
+    margin-left: -5vw;
 }
 .overpart3 {
     width: 30vw;
@@ -207,13 +217,14 @@ html {
     background-color: #ff9494;
 }
 /* ddecisions section */
-.ddecisions {
+#ddecisions {
     padding-top: 5%;
 }
 .decisionrow  {
     height: 50vh;
     align-items: flex-start;
     justify-content: flex-start;
+    margin-bottom: 3vw;
 }
 .ddecisionstitle h1 { 
     width: 20vw;    
@@ -230,9 +241,9 @@ html {
     font-size: 16px;
 }
 .wireflow {
-    margin: auto;
     margin-top: -10%;
-    margin-bottom: 20%;
+    margin-bottom: 10%;
+    margin-left: 24vw;
 }
 .featurelistintro p {
     width: 25vw; 
@@ -378,6 +389,7 @@ html {
     justify-content: center;  
 }
 .prototitle h1 {
+    width: 40%;
     padding-bottom: 2vw;
     margin-left: 15vw;
 }
@@ -395,6 +407,9 @@ html {
     padding-top: 5%;
     padding-bottom: 5%;
 }
+.challengetitle h1 {
+    width: 80%;
+}
 .challimg img {
     width: 17vw;
     padding-top: 5%;
@@ -407,3 +422,675 @@ html {
     font-family: Roboto Mono;
     font-size: 16px;
 }
+@media only screen and (max-device-width : 767px) {
+/* Hero secttion 1 */
+.herow {
+    margin-bottom: 20vw;
+    margin-top: 10vw;
+  }
+  .herotext h1 {
+      text-align: center;
+  }
+  #hero {
+      width: 90%;
+      padding-top: 30vw;
+      text-align: center;
+  } 
+  .moto h1 {
+    color: #ffd600;
+    width: 40vw;
+    text-align: center;
+}  
+  .heroimg img {
+      width: 90vw;
+      padding: 5vw 5vw 5vw 5vw;
+  }
+  #her {
+      margin-top: 5vw;
+      border: 1px solid #ffd600;
+      width: 100vw;
+  }
+  /* Hero section 2 */
+.hero2 {
+    margin-top: 4vw;
+    margin-bottom: 65vw;
+}
+.herow2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+.hero2text {
+    text-align: center;
+}
+.hero2bodycopy {
+    width: 90%;
+    padding-top: 1vw;
+    padding-bottom: 2vw;
+}
+.heroimg2 img {
+    width: 95vw;
+    margin-top: 10vw;
+}
+/* overview section */
+#overview {
+    padding-top: 5%;
+    margin-bottom: -5vw;
+    width: 100%;
+}
+.overow {
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+}
+.overtitle {
+    width: 20vw;
+    padding-bottom: 5vw;
+    text-align: center;
+}
+.overviewIllo img {
+    width: 15vw;
+}
+.row .subrow {
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.subrow {
+    margin-bottom: 7vw;
+}
+.subrow p {
+    line-height: 3vw;
+}
+.subrowcopy {
+    padding-left: 0vw;
+}
+.overpart2 {
+    width: 100vw;
+    padding-left: 7vw;
+}
+.overpart3 {
+    width: 100vw;
+}
+.overtools {
+    width: 100vw;
+}
+
+  .wireflow img {
+      width: 80vw;
+      margin: auto;
+  }
+  .lowfitimg img {
+      width: 90%;
+  } 
+  .dot {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-bottom: -10%;
+}
+.card-text {
+    font-size: 10px;
+    font-family: Roboto Mono;
+    text-align: start;
+}
+/* research section */
+.researchtitle {
+    padding-bottom: 5vw;
+}
+.caption li {
+    margin-bottom: -3vw;
+    margin-left: -5vw;
+}
+.observation {
+    margin-top: 5vw;
+    margin-left: 2vw;
+}
+/* decisions section */
+#ddecisions {
+    padding-bottom: 25vw;
+}
+.ddecisionstitle h1 {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 5vw;
+}
+.wireflow {
+    margin-top: 15vw;
+    margin-left: -5vw;
+}
+.featurelistintro p {
+    width: 100%;
+    margin-top: 20vw; 
+}
+.featurelist ul {
+    width: 100%;
+    margin-bottom: 5vw;
+}
+/* testings section */
+.lowfititle {
+    padding-bottom: 5vw;
+    text-align: center;
+}
+.lowfitimg img {
+    width: 60vw;
+    position: relative;
+    left: 50%;
+    margin-left: -32vw;
+}
+.abtitle {
+    padding-bottom: 5vw;
+    text-align: center;
+}
+.abimg {
+    width: 100%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-left: -184px;
+}
+/* branding section */
+.brandtitle {
+    padding-bottom: 5vw;
+    text-align: center;
+}
+#logof img {
+    width: 30vw;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-left: -115px;
+}
+.beachboys img {
+    width: 30vw;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-left: -115px;
+}
+.dot {
+    width: 7vw;
+    height: 7vw;
+}
+.typoAZ p {
+    width: 100vw;
+}
+/* prototype section */
+#prototype {
+    padding-bottom: 10vw;
+}
+.prototitle h1 {
+    width: 100vw;
+    margin-left: -3%;
+    padding-bottom: 5vw;
+    padding-top: 5vw;
+    text-align: center;
+}
+.prototitle a.button {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-top: -23px;
+    margin-left: -130px;
+}
+.protoimg img {
+    width: 25%;
+    margin-left: 36vw;
+    margin-right: 40vw;
+    padding-top: 7vw;
+    padding-bottom: 5vw;
+}
+/* challenges section */
+.challengetitle {
+    text-align: center;
+    width: 100%;
+}
+.challengetitle h1 {
+    text-align: center;
+    width: 100%;
+}
+.challimg img {
+    padding-bottom: 5vw;
+}
+.futuroptitle h1 {
+    text-align: center;  
+    padding-top: 3vw;
+    padding-bottom: 5vw;
+}
+.futuropcopy {
+    margin-left: -2vw;
+}
+}
+@media only screen and (max-device-width : 480px) {
+    /* Navigation bar */
+    .customNav {
+        position: fixed;
+        width: 100%;
+        background-color: white;
+        box-shadow: 0 20px 20px -20px #78909c;
+        border-bottom: 2px solid  #ffd600;
+        z-index: 9999;
+    }
+    .navbar-brand img {
+        padding-right: 0px;
+        width: 40px;
+    }
+    .nav-item {
+        margin: auto;
+        font-family: Crimson Pro;
+        font-weight: 900;
+        font-size: 16px;
+        margin-right: -10px;
+    }
+    .nav-item .nav-link {
+        padding-right: -10px;
+    }
+    .nav-link {
+        color: #595959;
+    }
+    .nav-link:hover {
+        color: #0079D0;
+    }  
+    /* Hero secttion 1 */
+    .herow {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 6vw;
+      }
+      .herotext {
+          width: 90%;
+          padding: 30vw 0% 0% 10vw;
+          z-index: 900;
+      } 
+      .moto {
+        color: #ffd600;
+        font-size: 30px;
+        width: 80vw;
+    }  
+      .heroimg img {
+          width: 90vw;
+          padding: 10vw 5vw;
+      }
+      #her {
+          border: 1px solid #ffd600;
+          width: 100vw;
+      }
+      /* Hero section 2 */
+    .hero2 {
+        margin-top: 5vw;
+        margin-bottom: 50vw;
+    }
+    .herow2 {
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .hero2bodycopy {
+        width: 90%;
+        padding-top: 1vw;
+        padding-bottom: 2vw;
+    }
+    .heroimg2 img {
+        width: 90vw;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        margin-top: 10vw;
+        margin-left: -216px;
+    }
+    .hero2text a .button {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        margin-top: -40px;
+        margin-left: -108px;
+    }
+    /* overview section */
+    #overview {
+        padding-top: 5%;
+        padding-bottom: 5%;
+        width: 100%;
+    }
+    .overow {
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .overtitle h1 {
+        width: 100vw; 
+        padding-bottom: 5vw;
+    }
+    .overviewIllo img {
+        width: 20vw;
+        margin: -7vw 0 0 2vw;
+    }
+    .row .subrow {
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding-bottom: 20vw;
+    }
+    .subrow {
+        margin-bottom: 10vw;
+    }
+    .subrow p {
+        line-height: 5vw;
+    }
+    .subrowcopy {
+        padding-left: 0vw;
+    }
+    .overpart2 {
+        width: 100vw;
+        padding-left: 5vw;
+    }
+    .overpart3 {
+        width: 100vw;
+    }
+    .overtools {
+        width: 100vw;
+    }
+    
+      .wireflow img {
+          width: 80vw;
+          margin: auto;
+      }
+      .lowfitimg img {
+          width: 90%;
+      } 
+      .dot {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        margin-bottom: -10%;
+    }
+    .card-text {
+        font-size: 10px;
+        font-family: Roboto Mono;
+        text-align: start;
+    }
+    /* research section */
+    #research {
+        padding-top: 5%;
+        padding-bottom: 5%;
+        padding-left: 5%;
+    }
+    .researchrow {
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .surveysubrow {
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .researchtitle h1 {
+        width: 60vw;
+    }
+    .interviews {
+        width: 100vw;
+        margin-top: 5%;
+    }
+    .quotes {
+        width: 100vw;
+        padding-top: 5%;
+    }
+    .survey {
+        width: 100vw;
+    }
+    .surveysubrow {
+        width: 100vw; 
+        margin-bottom: 15vw;  
+    } 
+    .chart img {
+        width: 20vw;
+        margin-right: 5vw;
+    }
+    .caption li {
+        font-family: Roboto Mono;   
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        margin-left: -10%;
+    }
+    .caption li {
+        margin-bottom: -17px;
+        margin-left: -8vw
+    }
+    .caption li p {
+        padding-top: 10px;
+        padding-left: 5px;
+    }
+    .box {
+        width: 16px;
+        height: 16px;
+    }
+    #blue {
+        background-color: #3fafff;
+    }
+    #yellow {
+        background-color: #FFD600;
+    }
+    #pink {
+        background-color: #ff9494;
+    }
+    .observation {
+        width: 100vw;
+        padding-top: 6vw;
+        padding-left: 1vw;
+    }
+    /* ddecisions section */
+    #ddecisions {
+        margin-top: 5%;
+    }
+    .row .decisionrow {
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .ddecisionstitle h1 { 
+        width: 90vw;   
+        padding-bottom: 5%; 
+    }
+    .findingslist {
+        width: 100vw;
+        padding-bottom: 5%;
+    }
+    .findingslist ul li {
+        list-style-type: disc;
+        font-family: Roboto Mono;
+        font-size: 16px;
+    }
+    .wireflow img {
+        margin-top: 35vw;
+    }
+    .thirdrow {
+        margin-top: 25vw;
+        margin-bottom: 20vw;
+    }
+    .featurelist ul {
+        width: 100vw;
+        font-family: Roboto Mono;
+        font-size: 16px;
+    }
+    .featurelist li {
+        list-style-type: disc;
+        font-family: Roboto Mono;
+        font-size: 16px;
+    }
+    /* testing section */
+    #testings {
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    .lowfititle {
+        padding-bottom: 5%;
+    }
+    .lowfitest .abtest {
+        height: 60vh;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .lowfitest {
+        padding-bottom: 5%;
+    }
+    .lowfititle .abtitle {
+        width: 20vw;
+    }
+    .lowfititlecopy .abcopy {
+        width: 40vw;
+    }
+    .lowfitimg img {
+        width: 80vw;
+        position: relative;
+        left: 50%;
+        margin-left: -40vw;
+    }
+    .abtitle {
+        padding-bottom: 5%;
+    }
+    .abcopy ul {
+        font-family: Roboto Mono;
+        font-size: 16px;
+    }
+    .abcopy ul li {
+        list-style-type: disc;
+        font-family: Roboto Mono;
+        font-size: 16px;
+    }
+    /* branding section */
+    .branding {
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    .brandrow {
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .brandtitle {
+        width: 20vw;
+        padding-bottom: 5%;
+    }
+    .logoc {
+        width: 30vw;
+    }
+    #logof img {
+        width: 50vw;
+    }
+    .beachboys img {
+        width: 50vw;
+        padding-top: 2%;
+        padding-bottom: 5%;
+    }
+    .colortypo {
+        width: 50vw;
+    }
+    .card {
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .dot {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        margin-bottom: -10%;
+    }
+    #ff9900 {
+       background-color: #ff9900; 
+    }
+    #ff5352 {
+        background-color: #ff5352; 
+     }
+    #f536370 {
+        background-color: #536370; 
+     }
+     #f828282 {
+        background-color: #828282; 
+     }
+     #ffffff {
+        background-color: #ffffff; 
+        border: 1px solid #000000;
+     }
+     #ff6b00 {
+        background-color: #ff6b00; 
+     }
+     #ff2d2c {
+        background-color: #ff2d2c; 
+     }
+     .card-text {
+         font-size: 12px;
+         font-family: Roboto Mono;
+         text-align: start;
+     }
+     .typosubrow {
+         width: 50vw;
+     }
+     .typotitle p {
+         font-family: Roboto Mono;
+         font-size: 16px;
+     }
+     .typoAZ p {
+         width: 95vw;
+         font-family: Nunito;
+         font-size: 20px;
+         font-weight: bolder;
+         color: #536370;
+     }
+     #typoimg img {
+        width: 100%;
+    }
+    .typocopy {
+        padding-top: 3%;
+    } 
+    /* prototype section */
+    #prototype {
+        align-items: center;
+        justify-content: center; 
+        width: 100%;
+    }
+    .prototitle h1 {
+        width: 100vw;
+        margin-left: -3%;
+        padding-bottom: 13%;
+        text-align: center;
+    }
+    .prototitle a.button {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        margin-top: -23px;
+        margin-left: -130px;
+    }
+    .protoimg img {
+        width: 25%;
+        margin-left: 36vw;
+        margin-right: 36vw;
+        margin-bottom: -12vw;
+    }
+    /* challenge section */
+    .challenges {
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    .challengetitle h1 {
+        width: 100% !important;
+        font-size: 44px;
+        text-align: center;
+        line-height: 40px;
+    }
+    .challengecopy {
+        padding-bottom: 5%;
+    }
+    .futuroptitle h1 {
+        padding-bottom: 5%;
+        text-align: center;
+    }
+    .futuropcopy {
+        margin-left: -5%;
+    }
+    .futuropcopy li {
+        list-style-type: disc;
+        font-family: Roboto Mono;
+        font-size: 16px;
+    }
+    }
+    
